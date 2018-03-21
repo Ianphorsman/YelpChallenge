@@ -1,0 +1,9 @@
+*.idea/
+*.p
+data/
+*.pyc
+/dist/
+/*.egg-info
+checkpoint
+*.index
+*.meta
