@@ -1,0 +1,6 @@
+{
+  "json_dataset_relative_path": "../data/dataset",
+  "json_dataset_absolute_path": "",
+  "image_dataset_relative_path": "../data/images",
+  "image_dataset_absolute_path": ""
+}
