@@ -1,4 +1,5 @@
 from yelp_challenge.yelp_preprocessor import Preprocessor
+from yelp_challenge.yelp_visualizer import Visualizer
 
 class Model(object):
 
@@ -6,3 +7,4 @@ class Model(object):
         self
     ):
         self.preprocess = Preprocessor()
+        self.visualize = Visualizer()
