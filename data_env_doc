@@ -3,4 +3,5 @@ the Yelp json and/or image datasets. You can supply a relative or absolute
 path, and the Preprocessor in yelp_preprocessor.py will then know where to
 load the data from. If you do not change the paths for your local
 environment the Preprocessor will assume you've stored the data in the
-YelpChallenge/data folder.
+YelpChallenge/data folder. Make sure you only supply one of either an
+absolute or relative path.
