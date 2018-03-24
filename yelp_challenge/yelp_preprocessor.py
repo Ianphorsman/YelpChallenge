@@ -1,11 +1,15 @@
+import json, os
 import numpy as np
 import pandas as pd
-import tensorflow as tf
-from yelp_challenge.yelp_data_loader import DataLoader
+
 
 class Preprocessor(object):
 
     def __init__(
-        self
+        self,
+        data_loader=None
     ):
-        self.data_loader = DataLoader()
+        self.data_loader = data_loader
+
+    def data_completeness(self, df):
+        return sum(df.count()) / df.size * 100
