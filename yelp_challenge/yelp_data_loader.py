@@ -14,7 +14,7 @@ class DataLoader(object):
 
         # if chunksize is not None then self.data will be a generator yielding chunks of the file
         self.photos = self.load_json('photos', chunksize=None)
-        print(self.random_photo(show=True))
+        print(self.random_photo())
 
     def load_json(self, name, chunksize=None):
         can_open = self.file_exists_for(name=name)
@@ -32,7 +32,7 @@ class DataLoader(object):
         for filename in os.listdir(can_open[1]):
             yield plt.imread(os.path.join(can_open[1], filename))
 
-    def random_photo(self, show=False):
+    def random_photo(self):
         can_open = self.file_exists_for(photos=True)
         if not can_open[0]:
             return can_open[1]
