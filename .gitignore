@@ -7,3 +7,4 @@ data/
 checkpoint
 *.index
 *.meta
+data_env.json
