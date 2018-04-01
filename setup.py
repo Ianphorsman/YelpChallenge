@@ -9,5 +9,5 @@ setup(
     license='MIT',
     version='0.1.0',
     packages=['yelp_challenge'],
-    install_requires=['numpy', 'tensorflow-gpu', 'pandas']
+    install_requires=['numpy', 'tensorflow-gpu', 'pandas', 'pymysql']
 )
